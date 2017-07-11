@@ -6,8 +6,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Get dotfiles
 git clone https://RaEmber@github.com/RaEmber/manjaro-dotfiles.git ~/dotfiles
-~/dotfiles/deletedefaults.sh
-~/dotfiles/install.sh
+cd ~/dotfiles/
+./deletedefaults.sh
+./install.sh
 
 # Setup git
 git config --global user.email "raphael.emberger@hotmail.ch"
