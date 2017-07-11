@@ -2,7 +2,7 @@
 
 # Install all needed packages
 sudo pacman -S vim firefox stow mlocate wget
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-ma-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Get dotfiles
 git clone https://RaEmber@github.com/RaEmber/manjaro-dotfiles.git ~/dotfiles
