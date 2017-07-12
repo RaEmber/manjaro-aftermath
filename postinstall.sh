@@ -5,7 +5,7 @@ sudo pacman -S make fakeroot vim stow mlocate wget firefox
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Get dotfiles
-git clone https://raember@github.com/raember/manjaro-dotfiles.git ~/dotfiles
+git clone https://raember@github.com/raember/dotfiles.git ~/dotfiles
 cd ~/dotfiles/
 ./delete_defaults.sh
 ./install.sh
