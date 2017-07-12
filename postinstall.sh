@@ -1,7 +1,35 @@
 #!/bin/bash
 
 # Install all needed packages
-sudo pacman -S make fakeroot vim stow mlocate wget firefox
+sudo pacman --noconfirm -S \
+	base-devel \
+	python3 \
+	python-pip \
+	ufw \
+	\
+	vim \
+	stow \
+	mlocate \
+	wget \
+	imagemagick \
+	slim slim-themes \
+	vlc qt4 \
+	xterm \
+	unzip \
+	xarchiver \
+	firefox \
+	libreoffice-fresh libreoffice-fresh-de hunspell-de \
+	thunderbird thunderbird-i18n-de
+
+yaourt --noconfirm -S \
+	gtk-theme-arc-git \
+	polybar
+
+sudo pip install pywal
+
+sudo systemctl enable slim ufw
+mkdir -p ~/.config/polybar
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Get dotfiles
