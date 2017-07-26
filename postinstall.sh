@@ -1,6 +1,7 @@
 #!/bin/bash
 
 gitdir=~/Dokumente/git
+walldir=~/Bilder/wallpapers
 
 install_packages() {
 	sudo pacman --noconfirm -Syu \
@@ -71,8 +72,7 @@ install_dotfiles() {
 	cd ~/dotfiles
 	./delete_defaults.sh
 	mkdir -p ~/.config/polybar
-	cd ~
-	./dotfiles/install.sh
+	./install.sh
 }
 
 setup_git_config() {
@@ -81,10 +81,15 @@ setup_git_config() {
 	sudo git config --system core.ignorecase false
 }
 
+load_wallpaper_colorscheme() {
+	wal -i $walldir
+}
+
 setup_git_config
 install_packages
 enable_services
 install_plugins
 install_powerline_fonts
 install_oh_my_zsh
+load_wallpaper_colorscheme
 install_dotfiles
