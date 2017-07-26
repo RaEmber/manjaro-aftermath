@@ -6,12 +6,13 @@ install_packages() {
 	sudo pacman --noconfirm -Syu \
 		base-devel \
 		python-pip \
-		ttf-ubuntu-font-family \
 		\
 		vim \
 		stow \
 		mlocate \
 		wget \
+		redshift python-gobject python-xdg librsvg \
+		gpsd \
 		imagemagick \
 		slim slim-themes \
 		vlc qt4 \
@@ -26,7 +27,8 @@ install_packages() {
 	yaourt --noconfirm -S \
 		gtk-theme-arc-git \
 		polybar \
-		firefox-extension-stylish
+		firefox-extension-stylish \
+		jsawk
 	
 	sudo pip install pywal
 }
@@ -34,7 +36,9 @@ install_packages() {
 enable_services() {
 	sudo systemctl enable \
 		slim \
-		ufw
+		ufw \
+		redshift-gtk \
+		gpsd
 }
 
 install_powerline_fonts() {
