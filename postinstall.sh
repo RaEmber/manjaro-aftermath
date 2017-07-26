@@ -16,7 +16,7 @@ install_packages() {
 		imagemagick \
 		slim slim-themes \
 		vlc qt4 \
-		xterm \
+		rxvt-unicode \
 		unzip \
 		xarchiver \
 		atom \
