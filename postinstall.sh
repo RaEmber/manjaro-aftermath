@@ -11,7 +11,7 @@ install_packages() {
 		stow \
 		mlocate \
 		wget \
-		redshift python-gobject python-xdg librsvg \
+		redshift python-xdg \
 		gpsd \
 		imagemagick \
 		slim slim-themes \
@@ -28,7 +28,7 @@ install_packages() {
 		gtk-theme-arc-git \
 		polybar \
 		firefox-extension-stylish \
-		jsawk
+		jsawk-git
 	
 	sudo pip install pywal
 }
@@ -49,6 +49,7 @@ install_powerline_fonts() {
 }
 
 install_oh_my_zsh() {
+	rm ~/.zshrc
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 }
 
@@ -70,7 +71,8 @@ install_dotfiles() {
 	cd ~/dotfiles
 	./delete_defaults.sh
 	mkdir -p ~/.config/polybar
-	./install.sh
+	cd ~
+	./dotfiles/install.sh
 }
 
 setup_git_config() {
