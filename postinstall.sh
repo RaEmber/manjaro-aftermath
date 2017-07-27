@@ -27,7 +27,7 @@ install_packages() {
 	
 	yaourt --noconfirm -S \
 		gtk-theme-arc-git \
-		polybar \
+		polybar-git \
 		firefox-extension-stylish \
 		jsawk-git
 	
