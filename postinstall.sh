@@ -1,7 +1,7 @@
 #!/bin/bash
 
 gitdir=~/Dokumente/git
-walldir=~/Bilder/wallpapers
+walldir=~/Bilder/wallpaper
 
 install_packages() {
 	sudo pacman --noconfirm -Syu \
