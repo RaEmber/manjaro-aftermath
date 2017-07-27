@@ -1,7 +1,7 @@
 #!/bin/bash
 
-gitdir=~/Dokumente/git
-walldir=~/Bilder/wallpaper
+gitdir=~/Dokumente/git/
+walldir=~/Bilder/wallpaper/
 
 install_packages() {
 	sudo pacman --noconfirm -Syu \
@@ -95,5 +95,5 @@ enable_services
 install_plugins
 install_powerline_fonts
 install_oh_my_zsh
-load_wallpaper_colorscheme
 install_dotfiles
+load_wallpaper_colorscheme
