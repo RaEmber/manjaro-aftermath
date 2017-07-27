@@ -82,6 +82,10 @@ setup_git_config() {
 }
 
 load_wallpaper_colorscheme() {
+	mkdir -p $walldir
+	if [ -z "$(ls -A $walldir)" ]; then
+		cp $gitdir/manjaro-aftermath/dummywallpaper.jpg $walldir
+	fi
 	wal -i $walldir
 }
 
