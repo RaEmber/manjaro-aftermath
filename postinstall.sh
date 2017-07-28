@@ -35,6 +35,8 @@ install_packages() {
 }
 
 uninstall_packages() {
+	killall compton
+	killall limepanel
 	sudo pacman -Rs \
 		compton \
 		limepanel
