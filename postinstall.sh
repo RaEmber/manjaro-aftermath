@@ -26,6 +26,8 @@ install_packages() {
 		thunderbird thunderbird-i18n-de
 	
 	yaourt --noconfirm -S \
+		ttf-mplus \
+		ttf-unifont \
 		gtk-theme-arc-git \
 		polybar-git \
 		firefox-extension-stylish \
