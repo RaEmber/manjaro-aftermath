@@ -34,6 +34,15 @@ install_packages() {
 	sudo pip install pywal
 }
 
+uninstall_packages() {
+	sudo pacman -Rs \
+		compton \
+		limepanel
+	rm ~/.config/compton.conf
+	rm ~/.limepanelrc
+	rm ~/.tmux.conf
+}
+
 enable_services() {
 	sudo systemctl enable \
 		slim \
@@ -90,6 +99,7 @@ load_wallpaper_colorscheme() {
 }
 
 setup_git_config
+uninstall_packages
 install_packages
 enable_services
 install_plugins
