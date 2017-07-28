@@ -27,7 +27,6 @@ install_packages() {
 	
 	yaourt --noconfirm -S \
 		ttf-mplus \
-		ttf-unifont \
 		gtk-theme-arc-git \
 		polybar-git \
 		firefox-extension-stylish \
