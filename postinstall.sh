@@ -7,6 +7,7 @@ install_packages() {
 	sudo pacman --noconfirm -Syu \
 		base-devel \
 		python-pip \
+		network-manager-applet \
 		\
 		vim \
 		stow \
