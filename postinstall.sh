@@ -8,6 +8,8 @@ install_packages() {
 		base-devel \
 		python-pip \
 		network-manager-applet \
+		xorg-xkill \
+		pulseaudio alsa-tools pulseaudio-alsa pulseaudio-bluetooth pavucontrol \
 		\
 		vim \
 		stow \
@@ -24,7 +26,9 @@ install_packages() {
 		atom \
 		firefox \
 		libreoffice-fresh libreoffice-fresh-de hunspell-de \
-		thunderbird thunderbird-i18n-de
+		thunderbird thunderbird-i18n-de \
+		scrot \
+		cmatrix
 	
 	yaourt --noconfirm -S \
 		ttf-mplus \
@@ -32,7 +36,8 @@ install_packages() {
 		gtk-theme-arc-git \
 		polybar-git \
 		firefox-extension-stylish \
-		jsawk-git
+		jsawk-git \
+		enpass-bin
 	
 	sudo pip install pywal
 }
