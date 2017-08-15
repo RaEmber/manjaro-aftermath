@@ -107,12 +107,10 @@ load_wallpaper_colorscheme() {
 	wal -i $walldir
 }
 
-#setup_git_config
-#uninstall_packages
-#install_packages
+setup_git_config
+uninstall_packages
+install_packages
 enable_services
-exit
-
 install_plugins
 install_powerline_fonts
 install_oh_my_zsh
