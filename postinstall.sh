@@ -107,13 +107,6 @@ load_wallpaper_colorscheme() {
 	wal -i $walldir
 }
 
-reload_configs() {
-	~/.config/bspwm/bspwmrc
-	~/.config/polybar/launch.sh &
-		disown
-	pkill -USR1 -x sxhkd
-}
-
 setup_git_config
 uninstall_packages
 install_packages
@@ -123,4 +116,3 @@ install_powerline_fonts
 install_oh_my_zsh
 install_dotfiles
 load_wallpaper_colorscheme
-reload_configs
