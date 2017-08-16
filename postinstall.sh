@@ -107,6 +107,13 @@ load_wallpaper_colorscheme() {
 	wal -i $walldir
 }
 
+start_programs() {
+	nm-applet &
+		disown
+	redshift-gtk -l 47:8 &
+		disown
+}
+
 setup_git_config
 uninstall_packages
 install_packages
@@ -116,3 +123,4 @@ install_powerline_fonts
 install_oh_my_zsh
 install_dotfiles
 load_wallpaper_colorscheme
+start_programs
