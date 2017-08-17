@@ -9,13 +9,14 @@ install_packages() {
 		python-pip \
 		network-manager-applet \
 		xorg-xkill \
-		pulseaudio alsa-tools pulseaudio-alsa pulseaudio-bluetooth pavucontrol rythmbox \
+		pulseaudio alsa-tools pulseaudio-alsa pulseaudio-bluetooth pavucontrol \
+		rhythmbox \
 		gksu \
 		\
 		sassc lessc nodejs \
 		nmap \
 		wireshark-gtk \
-		tor tails-installer \
+		tor \
 		\
 		vim \
 		stow \
