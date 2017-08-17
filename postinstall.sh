@@ -9,7 +9,13 @@ install_packages() {
 		python-pip \
 		network-manager-applet \
 		xorg-xkill \
-		pulseaudio alsa-tools pulseaudio-alsa pulseaudio-bluetooth pavucontrol \
+		pulseaudio alsa-tools pulseaudio-alsa pulseaudio-bluetooth pavucontrol rythmbox \
+		gksu \
+		\
+		sassc lessc nodejs \
+		nmap \
+		wireshark-gtk \
+		tor tails-installer \
 		\
 		vim \
 		stow \
@@ -21,14 +27,17 @@ install_packages() {
 		slim slim-themes \
 		vlc qt4 \
 		rxvt-unicode \
-		unzip \
-		xarchiver \
+		unzip xarchiver \
 		atom \
 		firefox \
 		libreoffice-fresh libreoffice-fresh-de hunspell-de \
 		thunderbird thunderbird-i18n-de \
 		scrot \
-		cmatrix
+		cmatrix \
+		netbeans \
+		mono \
+		texmaker \
+		texlive-most texlive-lang
 	
 	yaourt --noconfirm -S \
 		ttf-mplus \
@@ -37,7 +46,13 @@ install_packages() {
 		polybar-git \
 		firefox-extension-stylish \
 		jsawk-git \
-		enpass-bin
+		enpass-bin \
+		screenfetch \
+		neofetch \
+		lolcat \
+		pycharm-community \
+		matlab \
+		mariadb mysql-workbench
 	
 	sudo pip install pywal
 }
