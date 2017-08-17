@@ -4,7 +4,7 @@ gitdir=~/Dokumente/git/
 walldir=~/Bilder/wallpaper/
 
 install_packages() {
-	sudo pacman --noconfirm -Syu \
+	sudo pacman --noconfirm --color=auto -Syu \
 		base-devel \
 		python-pip \
 		network-manager-applet \
@@ -12,6 +12,8 @@ install_packages() {
 		pulseaudio alsa-tools pulseaudio-alsa pulseaudio-bluetooth pavucontrol \
 		rhythmbox \
 		gksu \
+		screenfetch \
+		lolcat \
 		\
 		sassc lessc nodejs \
 		nmap \
@@ -48,9 +50,7 @@ install_packages() {
 		firefox-extension-stylish \
 		jsawk-git \
 		enpass-bin \
-		screenfetch \
 		neofetch \
-		lolcat \
 		pycharm-community \
 		matlab \
 		mariadb mysql-workbench
