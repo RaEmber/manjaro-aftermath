@@ -86,7 +86,7 @@ install_plugins() {
 }
 
 install_dotfiles() {
-	git clone https://raember@github.com/raember/dotfiles.git ~/dotfiles
+	git clone --recursive https://raember@github.com/raember/dotfiles.git ~/dotfiles
 	cd ~/dotfiles
 	./delete_defaults.sh
 	mkdir -p ~/.config/polybar
