@@ -43,6 +43,7 @@ install_packages() {
 		ttf-mplus \
 		ttf-font-awesome \
 		gtk-theme-arc-git \
+		tails-installer \
 		polybar-git \
 		firefox-extension-stylish \
 		jsawk-git \
