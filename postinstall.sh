@@ -55,7 +55,8 @@ install_packages() {
 		neofetch \
 		pycharm-community \
 		matlab \
-		mariadb mysql-workbench
+		mariadb mysql-workbench \
+		jmtpfs
 	
 	sudo pip install pywal
 }
