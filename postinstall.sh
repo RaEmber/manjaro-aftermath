@@ -40,7 +40,8 @@ install_packages() {
 		netbeans \
 		mono \
 		texmaker \
-		texlive-most texlive-lang
+		texlive-most texlive-lang \
+		libmtp gvfs-mtp
 	
 	yaourt --noconfirm -S \
 		ttf-mplus \
