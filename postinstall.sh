@@ -10,7 +10,7 @@ install_packages() {
 		network-manager-applet \
 		xorg-xkill \
 		pulseaudio alsa-tools pulseaudio-alsa pulseaudio-bluetooth pavucontrol \
-		rhythmbox \
+		rhythmbox mpd gst-libav gst-plugins-ugly \
 		gksu \
 		screenfetch \
 		lolcat \
