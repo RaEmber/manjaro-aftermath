@@ -56,7 +56,8 @@ install_packages() {
 		pycharm-community \
 		matlab \
 		mariadb mysql-workbench \
-		jmtpfs
+		jmtpfs \
+		wikidpad
 	
 	sudo pip install pywal
 }
