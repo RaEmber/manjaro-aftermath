@@ -39,6 +39,7 @@ install_packages() {
 		cmatrix \
 		netbeans \
 		mono \
+		mariadb mysql-workbench \
 		texmaker \
 		texlive-most texlive-lang \
 		libmtp gvfs-mtp
@@ -55,7 +56,6 @@ install_packages() {
 		neofetch \
 		pycharm-community \
 		matlab \
-		mariadb mysql-workbench \
 		jmtpfs \
 		wikidpad
 	
